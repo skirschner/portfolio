@@ -1,0 +1,73 @@
+/* header */
+nav a:link {
+    text-decoration: none;
+    color: black;
+    font-family: 'Oswald', sans-serif;
+}
+
+nav a:hover {color: green;}
+
+nav a:visited {color:black;}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    margin: 25px;
+    margin-right: 50px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    margin: 10px;
+}
+
+/* body */
+
+p {font-family: Arial, Helvetica, sans-serif;}
+
+h1, h2, h3 {
+    font-family: 'Oswald', sans-serif;
+    margin-left: 20px;
+}
+
+body {
+    background: yellow;
+    background: repeating-radial-gradient(white, yellow, white);
+}
+
+.photogrid img, .photogridI img, .photogridII img {
+    width: 100%;
+    height: auto;
+}
+
+.photogrid, .photogridII, .photogridI {
+    display: flex;
+}
+
+.hyperlink, .linkedin {
+    text-decoration: none;
+    color: black;
+}
+
+.hyperlink a:hover {color: green;}
+
+.hyperlink a:visited {color:black;}
+
+p a:hover {color: green;}
+
+p a:visited {color:black;}
+
+/* footer */
+.instatag{
+    float: right;
+    text-decoration: none;
+    color: black;
+    margin-right: 15px;
+}
+
+footer a:hover {color: green;}
+
+footer {
+    font-family: 'Oswald', sans-serif;
+    margin-left: 10px;
+}

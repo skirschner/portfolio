@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="jquery-2.1.4.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+    <title>Kirschner | CONTACT</title>
+    <style>
+        .main {
+            margin: auto;
+            max-width: 960px;
+        }
+
+        table, td, th  {
+            border: 1px solid black;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+
+        .flexbox {
+            display: flex;
+            justify-content: center;
+            justify-content: space-evenly;
+        }
+
+        .blurb p {
+            font-family: 'Oswald', sans-serif;
+        }
+
+        footer {
+            margin-top: 10px;
+        }
+
+        form {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .submitbutton {
+            width: 100px;
+            height: 50px;
+            background: white;
+            transition: width 1s;
+        }
+
+        .submitbutton:hover {
+            width: 150px;
+        }
+
+        div {
+            margin: 10px;
+        }
+    </style>
+    <script>
+        function contactResponse (){
+            alert ('Thank you for your response, I will get back to you as soon as I can!');
+        }
+    </script>
+</head>
+<body>
+    <nav>
+        <a href="index">Home</a>
+        <a href="bio">Bio</a>
+        <a href="mixtape">Mixtape</a>
+        <a href="zipped">Zipped</a>
+        <a href="moody">Moody</a>
+        <a href="fads">FADS</a>
+        <a href="contact">Contact</a>
+    </nav>
+    <main>
+        <div class="flexbox">
+            <div>
+                <form action="https://formspree.io/f/mbjwqody" method="POST" class="form">
+                    <label for="fname"> Name: </label>
+                    <input type="text" name="fullname" id="fname"><br>
+        
+                    <label for="phonenumber"> Phone Number: </label>
+                    <input type="text" name="phonenumber" id="phonenumber"><br><br>
+        
+                    <label for="email"> Email: </label>
+                    <input type="text" name="email" id="email"><br><br>
+        
+                    <label for="message">Message</label><br>
+                    <textarea name="message" id="message"></textarea><br>
+                                
+                    <input type="submit" value="Send" onclick="contactResponse ();" class="submitbutton">
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        &copy; 2022
+        <span><a class="instatag" href="https://www.instagram.com/sara.kirschner/" target="_blank">@sara.kirschner</a></span>
+    </footer>
+</body>
+</html>
