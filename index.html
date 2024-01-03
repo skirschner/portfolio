@@ -12,28 +12,37 @@
     <style>
         .flexcenter {
             display: flex;
-            text-align: center;
-            justify-content: center;
             font-size: larger;
         }
 
         ul {
             list-style: none;
         }
+
+        .grow {
+            transition: all .2s ease-in-out;
+            font-size: 90px;
+            line-height: 65px;
+        }
+
+        .grow:hover { 
+            transform: scale(1.1); 
+        }
+
     </style>
 </head>
 <body>
     <main>
-    <div class="flexcenter">
+        <div class="flexcenter">
         <nav>
             <ul>
-                <li><a href="index">Home</a></li>
-                <li><a href="bio">Bio</a></li>
-                <li><a href="mixtape">Mixtape</a></li>
-                <li><a href="zipped">Zipped</a></li>
-                <li><a href="moody">Moody</a></li>
-                <li><a href="fads">FADS</a></li>
-                <a href="misc">Misc.</a>
+                <li class="grow"><a href="index">Home</a></li>
+                <li class="grow"><a href="bio">Bio</a></li>
+                <li class="grow"><a href="mixtape">Mixtape</a></li>
+                <li class="grow"><a href="zipped">Zipped</a></li>
+                <li class="grow"><a href="moody">Moody</a></li>
+                <li class="grow"><a href="fads">FADS</a></li>
+                <li class="grow"><a href="misc">Misc.</a></li>
             </ul>
         </nav>    
     </div>
