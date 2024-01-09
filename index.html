@@ -34,7 +34,8 @@
 <body>
     <main>
         <div class="flexcenter">
-        <nav>
+        <div>
+            <nav>
             <ul>
                 <li class="grow"><a href="index">Home</a></li>
                 <li class="grow"><a href="bio">Bio</a></li>
@@ -44,8 +45,24 @@
                 <li class="grow"><a href="fads">FADS</a></li>
                 <li class="grow"><a href="misc">Misc.</a></li>
             </ul>
-        </nav>    
-    </div>
+            </nav>
+        </div>
+        <div>
+            <img src="" id="image">
+
+            <script type="text/javascript">
+                let image = document.getElementById('image');
+                let images = ['_DSC2897.png', 'DSC06755.jpg', 'skatespreadI.png']
+                setInterval(function(){
+                    let random = Math.floor(Math.random() * 4);
+                    image.src = images[random];
+                }, 800);
+            </script>
+
+
+
+        </div>    
+        </div>
     </main>
 </body>
 </html>
