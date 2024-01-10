@@ -55,7 +55,7 @@ body {
 
 p a:hover {color: green;}
 
-p a:visited {color:black;}
+p a:visited {color:green;}
 
 video {
     display: block;

@@ -13,7 +13,6 @@
         .center {
             display: flex;
             margin: auto;
-            font-size: larger;
         }
 
         ul {
@@ -42,6 +41,13 @@
             transition: 0.3s;
         }
 
+        @media only screen and (max-width: 600px) {
+            .center {
+                width: 100%;
+                text-align: left;
+            }
+        }
+
     </style>
 </head>
 <body>
@@ -64,7 +70,7 @@
                 <img src="" id="image">
                 <script type="text/javascript">
                     let image = document.getElementById('image');
-                    let images = ['test.png', 'DSC06755.jpg', 'skatespreadI.png']
+                    let images = ['doll.png', 'DSC06755.jpg', 'skatespreadI.png']
                     setInterval(function(){
                         let random = Math.floor(Math.random() * 3);
                         image.src = images[random];
