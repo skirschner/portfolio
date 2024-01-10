@@ -10,8 +10,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
     <title>Sara Kirschner</title>
     <style>
-        .flexcenter {
+        .center {
             display: flex;
+            margin: auto;
             font-size: larger;
         }
 
@@ -29,39 +30,47 @@
             transform: scale(1.1);
         }
 
+        .slideshow {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        img {
+            width: 50%;
+            height: auto;
+            transition: 0.3s;
+        }
+
     </style>
 </head>
 <body>
     <main>
-        <div class="flexcenter">
-        <div>
-            <nav>
-            <ul>
-                <li class="grow"><a href="index">Home</a></li>
-                <li class="grow"><a href="bio">Bio</a></li>
-                <li class="grow"><a href="mixtape">Mixtape</a></li>
-                <li class="grow"><a href="zipped">Zipped</a></li>
-                <li class="grow"><a href="moody">Moody</a></li>
-                <li class="grow"><a href="fads">FADS</a></li>
-                <li class="grow"><a href="misc">Misc.</a></li>
-            </ul>
-            </nav>
-        </div>
-        <div>
-            <img src="" id="image">
-
-            <script type="text/javascript">
-                let image = document.getElementById('image');
-                let images = ['_DSC2897.png', 'DSC06755.jpg', 'skatespreadI.png']
-                setInterval(function(){
-                    let random = Math.floor(Math.random() * 4);
-                    image.src = images[random];
-                }, 800);
-            </script>
-
-
-
-        </div>    
+        <div class="center">
+            <div>
+                <nav>
+                <ul>
+                    <li class="grow"><a href="index">Home</a></li>
+                    <li class="grow"><a href="bio">Bio</a></li>
+                    <li class="grow"><a href="mixtape">Mixtape</a></li>
+                    <li class="grow"><a href="zipped">Zipped</a></li>
+                    <li class="grow"><a href="moody">Moody</a></li>
+                    <li class="grow"><a href="fads">FADS</a></li>
+                    <li class="grow"><a href="misc">Misc.</a></li>
+                </ul>
+                </nav>
+            </div>
+            <div class="slideshow">
+                <img src="" id="image">
+                <script type="text/javascript">
+                    let image = document.getElementById('image');
+                    let images = ['test.png', 'DSC06755.jpg', 'skatespreadI.png']
+                    setInterval(function(){
+                        let random = Math.floor(Math.random() * 3);
+                        image.src = images[random];
+                    }, 800);
+                </script>
+            </div>    
         </div>
     </main>
 </body>
